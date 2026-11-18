@@ -13,7 +13,7 @@ const workspacePath = fileURLToPath(new URL("./", import.meta.url));
 const mainPage = await readFile(new URL("./main.html", import.meta.url));
 const appsPage = await readFile(new URL("./apps.html", import.meta.url));
 const favicon = await readFile(new URL("./favicon.ico", import.meta.url));
-const serviceWorker = await readFile(new URL("./sw.js", import.meta.url));
+const serviceWorker = await readFile(new URL("./manifest.js", import.meta.url));
 
 logging.set_level(logging.NONE);
 Object.assign(wisp.options, {
